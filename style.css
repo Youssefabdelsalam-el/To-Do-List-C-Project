@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #101827;
+    font-family: Arial, sans-serif;
+    color: white;
+    padding: 30px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 35px;
+    color: white;
+}
+
+header iconify-icon {
+    color: #438eea;
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+.form-card {
+    background-color: #17243a;
+    border: 1px solid #2d4264;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.form-card h2 {
+    margin-bottom: 25px;
+    color: white;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #111c2e;
+    border: 1px solid #405578;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #438eea;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+form button {
+    width: 100%;
+    padding: 16px;
+    margin-top: 25px;
+    background-color: #286bc4;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #438eea;
+}
+
+.filters {
+    display: flex;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.filters button {
+    flex: 1;
+    padding: 14px;
+    background-color: #17243a;
+    color: white;
+    border: 1px solid #405578;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background-color: #286bc4;
+}
+
+.tasks-card {
+    background-color: #17243a;
+    border: 1px solid #2d4264;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.tasks-card h2 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #202f49;
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #2d4264;
+}
+
+td iconify-icon {
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.tasks-card td[colspan] {
+    text-align: center;
+    color: #aab8d2;
+    padding: 30px;
+}
+.completed .task-title,
+.completed .task-description {
+    text-decoration: line-through;
+    color: #8190a9;
+}
+
+.task-title {
+    font-weight: bold;
+    color: white;
+}
+
+.task-description {
+    color: #aab8d2;
+    overflow-wrap: anywhere;
+}
+
+.status-button {
+    background: transparent;
+    border: none;
+    color: #91a4c4;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.status-button iconify-icon {
+    color: inherit;
+}
+
+.completed .status-button {
+    color: #39c477;
+}
+
+.action-button {
+    background: #263b5c;
+    color: #55a0ff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 3px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.action-button.delete {
+    color: #ff5c6c;
+}
+
+.cancel-button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background: #35445d;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.filters button.active {
+    background: #286bc4;
+    border-color: #286bc4;
+    color: white;
+}
+
+#taskCount {
+    display: block;
+    color: #aab8d2;
+    margin: 10px 0 20px;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .form-card {
+        padding: 20px;
+    }
+
+    .filters {
+        gap: 8px;
+    }
+
+    .filters button {
+        font-size: 13px;
+        padding: 12px 5px;
+    }
+
+    .tasks-card {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 600px;
+    }
+}
