@@ -18,7 +18,7 @@
 
         <header>
             <h1>
-                <iconify-icon icon="mdi:checkbox-marked-circle-outline"></iconify-icon>
+                <svg class="iconify-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none" /><path fill="currentColor" d="M20 12a8 8 0 0 1-8 8a8 8 0 0 1-8-8a8 8 0 0 1 8-8c.76 0 1.5.11 2.2.31l1.57-1.57A9.8 9.8 0 0 0 12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10M7.91 10.08L6.5 11.5L11 16L21 6l-1.41-1.42L11 13.17z" /></svg>
                 To Do List
             </h1>
         </header>
@@ -34,11 +34,9 @@
                     placeholder="Enter task name" required>
 
                 <label>Task Description</label>
-                <textarea id="taskDescription"
-                    placeholder="Enter task description"></textarea>
-
+                <textarea id="taskDescription"placeholder="Enter task description"></textarea>
                 <button type="submit">
-                    <iconify-icon icon="mdi:plus"></iconify-icon>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none" /><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M12 20v-8m0 0V4m0 8h8m-8 0H4" /></svg>
                     <span id="submitText">Add Task</span>
                 </button>
 
@@ -53,17 +51,11 @@
 
         <div class="filters">
 
-            <button class="active" data-filter="all">
-                All Tasks
-            </button>
+            <button class="active" data-filter="all">All Tasks</button>
 
-            <button data-filter="completed">
-                Completed
-            </button>
+            <button data-filter="completed">Completed</button>
 
-            <button data-filter="waiting">
-                Waiting
-            </button>
+            <button data-filter="waiting">Waiting</button>
 
         </div>
 
